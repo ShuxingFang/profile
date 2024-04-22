@@ -1,0 +1,102 @@
+/* Basic resets */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+}
+
+header h1 {
+  text-align: center;
+  color: #0073e6;
+}
+
+section {
+  text-align: center;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+section a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer h2 {
+  text-align: center;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+ul.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+ul.social-links li a {
+  color: #333;
+  font-size: 24px;
+}
+
+ul.social-links li a:hover {
+  color: #0073e6;
+}
+
+/* Basic styling outside media queries remains unchanged */
+
+@media (max-width: 768px) {
+  header img {
+      width: 120px;
+      height: 120px;
+  }
+
+  header h1, footer h2 {
+      font-size: 18px; /* Adjust font size for smaller devices */
+  }
+
+  ul.social-links {
+      flex-direction: column;
+      display: flex;
+      align-items: center; /* Center align the icons when stacked */
+      gap: 10px;
+  }
+}
+
+
+/* Button styling for 'Buy me a PS5' */
+section a {
+  display: inline-block; /* Makes the link behave like a block element */
+  background-color: #0073e6; /* Button color */
+  color: white; /* Text color for the button */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Removes underline */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+section a:hover {
+  background-color: #0056b3; /* Darker shade on hover for visual feedback */
+}
